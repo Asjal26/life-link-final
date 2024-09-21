@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>LIFE LINK</title>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="amb">LIFE LINK</div>
+
+            <ul class="nav-link">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="gallery.html">Image Gallery</a></li>
+                <li><a href="e-ambulance types.html">E-Ambulance Types</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+
+            <div class="search-container">
+                <span class="search-icon material-symbols-outlined">search</span>
+                <input type="text" placeholder="Search..." class="search-box">
+            </div>
+
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    
+
+
+
+
+    <header class="yourlife">
+        <h1>Your Lifeline on Wheels</h1>
+        <p>Rapid Response E-Ambulance Services</p>
+    </header>
+
+    <div class="gallery">
+        <div class="gallery-item">
+
+            <h2 class="hea">NON A/C AMBULANCES</h2>
+            <img src="non.jpeg"  alt="Ambulance in Action"  onclick="openLightbox();currentSlide(1)">
+            <!-- <div class="description">Equipped with State-of-the-Art Medical Equipment</div> -->
+           </div>
+           <div class="gallery-item">
+            <img src="non ambulance inside.jpeg" alt="Paramedics Assisting" onclick="openLightbox();currentSlide(2)">
+            <!-- <div class="description">Expert Care from Trained Professionals</div> -->
+        </div>
+        <div class="gallery-item">
+
+            <h2 class="hea">A/C AMBULANCES</h2>
+            <img src="ac ambulance .jpeg" alt="Non-Emergency Transport" onclick="openLightbox();currentSlide(3)">
+            <!-- <div class="description">Non-Emergency Medical Transportation</div> -->
+        </div>
+        <div class="gallery-item">
+            <img src="images1.jpeg" alt="Emergency Response" onclick="openLightbox();currentSlide(4)">
+            <!-- <div class="description">Emergency Medical Response</div> -->
+        </div>
+
+        <div class="gallery-item">
+            <h2 class="hea">ICU AMBULANCES</h2>
+            <img src="icu ambulance .jpg" alt="Community Engagement" onclick="openLightbox();currentSlide(5)">
+            <!-- <div class="description">Engaging with Our Community</div> -->
+        </div>
+        <div class="gallery-item">
+            <img src="icu ambulance inside.jpg" alt="First Aid Training" onclick="openLightbox();currentSlide(6)">
+            <!-- <div class="description">Providing First Aid Training</div> -->
+        </div>
+        <div class="gallery-item">
+            <h2 class="hea">ICCU AMBULANCES</h2>
+            <img src="iccu ambulance .jpg" alt="First Aid Training" onclick="openLightbox();currentSlide(6)">
+            <!-- <div class="description">Providing First Aid Training</div> -->
+        </div>
+        <div class="gallery-item">
+            <img src="iccu ambulance inside .jpg" alt="First Aid Training" onclick="openLightbox();currentSlide(6)">
+            <!-- <div class="description">Providing First Aid Training</div> -->
+        </div>
+    </div>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <div class="lightbox-content">
+            <img class="lightbox-image" id="lightboxImage">
+            <div class="lightbox-description" id="lightboxDescription"></div>
+        </div>
+    </div>
+
+
+    <footer>
+        <p>&copy; 2024 E-Ambulance Service. All rights reserved.</p>
+    </footer>
+
+
+</body>
+</html>
